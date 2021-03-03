@@ -10,5 +10,8 @@
     "smacss"
   ],
   "author": "Artemy Onuchin",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sass-lint": "^1.12.1"
+  }
 }
