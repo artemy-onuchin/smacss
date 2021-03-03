@@ -1,0 +1,14 @@
+{
+  "name": "smacss",
+  "version": "1.0.0",
+  "description": "Scalable and Modular Architecture for CSS",
+  "private": true,
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "smacss"
+  ],
+  "author": "Artemy Onuchin",
+  "license": "MIT"
+}
