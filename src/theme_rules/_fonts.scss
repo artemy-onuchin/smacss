@@ -1,35 +1,37 @@
+$font-path:  '../fonts/FontName/';
+
 // Regular 400
 @font-face {
+    font-display: swap;
     font-family: $font-family;
     font-style: normal;
     font-weight: 400;
-    src:url('../fonts/FontsName/Font-Regular.woff') format('woff'),
-        url('../fonts/FontsName/Font-Regular.ttf') format('truetype');
+    src: url( $font-path + 'Font-Regular.woff2') format('woff2');
 }
 
 // Regular Italic 400
 @font-face {
+    font-display: swap;
     font-family: $font-family;
     font-style: italic;
     font-weight: 400;
-    src:url('../fonts/FontsName/Font-Italic.woff') format('woff'),
-        url('../fonts/FontsName/Font-Italic.ttf') format('truetype');
+    src: url( $font-path + 'Font-Italic.woff2') format('woff2');
 }
 
 // Bold 700
 @font-face {
+    font-display: swap;
     font-family: $font-family;
     font-style: normal;
     font-weight: 700;
-    src:url('../fonts/FontsName/Font-Bold.woff') format('woff'),
-        url('../fonts/FontsName/Font-Bold.ttf') format('truetype');
+    src: url( $font-path + 'Font-Bold.woff2') format('woff2');
 }
 
 // Bold Italic 700
 @font-face {
+    font-display: swap;
     font-family: $font-family;
     font-style: italic;
     font-weight: 700;
-    src:url('../fonts/FontsName/Font-BoldItalic.woff') format('woff'),
-        url('../fonts/FontsName/Font-BoldItalic.ttf') format('truetype');
+    src: url( $font-path + 'Font-BoldItalic.woff2') format('woff2');
 }

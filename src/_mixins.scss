@@ -1,57 +1,25 @@
 @use "vars";
 
 // Breakpoints
-@mixin bp480 {
-  @media screen and (min-width: vars.$mobile-sm) {
-    @content;
-  }
-}
+$breakpoints: (
+  "mobile-sm": vars.$mobile-sm,
+  "mobile": vars.$mobile,
+  "tablet": vars.$tablet,
+  "tablet-lg": vars.$tablet-lg,
+  "laptop-sm": vars.$laptop-sm,
+  "laptop": vars.$laptop,
+  "desktop": vars.$desktop,
+  "desktop-lg": vars.$desktop-lg,
+  "desktop-xl": vars.$desktop-xl
+);
 
-@mixin bp576 {
-  @media screen and (min-width: vars.$mobile) {
-    @content;
-  }
-}
-
-@mixin bp768 {
-  @media screen and (min-width: vars.$tablet) {
-    @content;
-  }
-}
-
-@mixin bp1024 {
-  @media screen and (min-width: vars.$tablet-lg) {
-    @content;
-  }
-}
-
-@mixin bp1280 {
-  @media screen and (min-width: vars.$laptop-sm) {
-    @content;
-  }
-}
-
-@mixin bp1366 {
-  @media screen and (min-width: vars.$laptop) {
-    @content;
-  }
-}
-
-@mixin bp1440 {
-  @media screen and (min-width: vars.$desktop) {
-    @content;
-  }
-}
-
-@mixin bp1680 {
-  @media screen and (min-width: vars.$desktop-lg) {
-    @content;
-  }
-}
-
-@mixin bp2000 {
-  @media screen and (min-width: vars.$desktop-xl) {
-    @content;
+@mixin respond-min($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media screen and (min-width: map-get($breakpoints, $name)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, `#{$name}` is not a valid breakpoint name.";
   }
 }
 

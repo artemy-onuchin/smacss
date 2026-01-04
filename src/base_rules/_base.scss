@@ -1,6 +1,10 @@
-* {
-    -webkit-tap-highlight-color: transparent;
-    outline: 0;
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 2px solid #4A90E2;
+    outline-offset: 2px;
 }
 
 *,
