@@ -1,9 +1,13 @@
 // breakpoint
+$mobile-sm: 480px;
 $mobile: 576px;
-$tablet-portrait: 768px;
-$tablet-landscape: 1024px;
+$tablet: 768px;
+$tablet-lg: 1024px;
+$laptop-sm: 1280px;
 $laptop: 1366px;
-$desktop: 1600px;
+$desktop: 1440px;
+$desktop-lg: 1680px;
+$desktop-xl: 2000px;
 
 // colors
 $color-white: #ffffff;
@@ -26,3 +30,12 @@ $size: 8px;
 
 // other
 $transition: 300ms;
+
+// z-index
+$z-dropdown: 1000;
+$z-sticky: 1100;
+$z-fixed: 1200;
+$z-modal-backdrop: 1300;
+$z-modal: 1400;
+$z-popover: 1500;
+$z-tooltip: 1600;

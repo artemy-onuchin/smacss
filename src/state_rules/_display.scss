@@ -1,8 +1,16 @@
 .hide-on-mobile {
     display: none;
 
-    @media (min-width: $mobile) {
-        display: flex;
+    @include bp768 {
+        display: block;
+    }
+}
+
+.hide-on-tablet {
+    display: none;
+
+    @include bp1280 {
+        display: block;
     }
 }
 

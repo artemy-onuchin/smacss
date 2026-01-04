@@ -1,6 +1,6 @@
 {
   "name": "smacss",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Scalable and Modular Architecture for CSS",
   "private": true,
   "keywords": [
@@ -10,8 +10,5 @@
     "smacss"
   ],
   "author": "Artemy Onuchin",
-  "license": "MIT",
-  "dependencies": {
-    "sass-lint": "^1.12.1"
-  }
+  "license": "MIT"
 }

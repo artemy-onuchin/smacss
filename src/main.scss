@@ -1,26 +1,22 @@
-// general
-@import './vars';
-@import './mixins';
-
 // base rules
-@import './base_rules/normalize';
-@import './base_rules/base';
-@import './base_rules/special-classes';
+@use './base_rules/normalize';
+@use './base_rules/base';
+@use './base_rules/special-classes';
 
 // state rules
-@import './state_rules/display';
+@use './state_rules/display';
 
 // theme rules
-@import './theme_rules/fonts';
-@import './theme_rules/typography';
+@use './theme_rules/fonts';
+@use './theme_rules/typography';
 
 // layout rules
-@import './layout_rules/body';
-@import './layout_rules/header';
-@import './layout_rules/navigation';
-@import './layout_rules/aside';
-@import './layout_rules/content';
-@import './layout_rules/footer';
+@use './layout_rules/body';
+@use './layout_rules/header';
+@use './layout_rules/navigation';
+@use './layout_rules/aside';
+@use './layout_rules/content';
+@use './layout_rules/footer';
 
 // modules/components rules
-@import './module_rules/news-home';
+@use './module_rules/news-home';
